@@ -1,4 +1,4 @@
-number = (
+num = (
     "73167176531330624919225119674426574742355349194934"
     "96983520312774506326239578318016984801869478851843"
     "85861560789112949495459501737958331952853208805511"
@@ -21,12 +21,12 @@ number = (
     "71636269561882670428252483600823257530420752963450"
 )
 
-def max_product_adjacent_digits(number, length):
+def max_product_adjacent_digits(num, length):
     max_product = 0
     max_sequence = ""
     
-    for i in range(len(number) - length + 1):
-        digits = number[i:i + length]
+    for i in range(len(num) - length + 1):
+        digits = num[i:i + length]
         if '0' in digits: 
             continue
         product = 1
